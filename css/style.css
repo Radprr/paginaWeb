@@ -1,0 +1,500 @@
+
+:root{
+    --colorPrimario: #5577FD;
+    --colorSecundario: #FFFFFF;
+    --colorTerciario: #D9D9D9;
+    --colorCuarto: #a1a1a1; 
+    --aciertoColor: #52F943;
+    --incompletoColor: #757575;
+    --colorScrollMouse: #3355ff;
+    --fuentePrincipal: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content:center;
+    margin: 0;
+    width: 100%;
+}
+html{
+    margin: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 74px;
+    margin-top: 74px;
+}
+.entrada{
+    margin: 10px;
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+    font-size: 16px;
+    border:black solid 2px;
+}
+.opcionesAdicionales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.opcionesAdicionales a{
+    text-decoration: none;
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+    color: var(--colorPrimario);
+    margin: 5px;
+    padding: 5px;
+}
+::placeholder{
+    font-family: var(--fuentePrincipal);
+}
+h1{
+    font-size: 30px;
+    font-family: var(--fuentePrincipal);
+    padding: 10px;
+    margin: 20px;
+}
+h2{
+    font-size: 25px;
+    font-family: var(--fuentePrincipal);
+    padding: 10px;
+    margin:20px; 
+}
+h3{
+    font-size: 20px;
+    font-family: var(--fuentePrincipal);
+    padding: 10px;
+    margin:20px; 
+}
+form{    
+    margin-top: 74px;
+}
+.botones{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton{
+    border-radius: 20px;
+    border: 0;
+    width: 300px;
+    height: 50px;
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+    color: var(--colorSecundario);
+    background-color: var(--colorPrimario); 
+    font-size: 20px;
+    box-shadow: 2px 2px 10px  gray; 
+    cursor:pointer;
+    margin: 20px;
+}
+header{
+    display: flex;
+    margin-bottom: 20px;
+}
+.headerDashboard{
+    background-color: var(--colorPrimario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.menu{
+    font-size: 40px;
+    font-weight: 700;
+}
+.menu::before{
+    content: "\f0c9";
+    font-family: 'Font Awesome 7 Free';
+}
+
+.user{
+    font-size: 40px;
+    font-weight: 700;
+}
+.user::before{
+    content: "\f007";
+    font-family: 'Font Awesome 7 Free';
+}
+
+#logo{
+    width: 90px;
+    height: 90px;
+    padding-left: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+}
+.imgHero{
+    width: 50%;
+    height: 700px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bodyIndex{
+    display: flex;
+    justify-content: flex-start;
+    display: inline;
+    margin: 40px;
+    margin-top: 0;
+}
+.elementosHero{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 50%;
+}
+p{
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+.imgExample{
+    width: 170px;
+    height: 170px;
+}
+.card .imgExample{
+    width: 170px;
+    height: 120px;
+}
+.contenedoresAspectos{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    width: 330px;
+}
+.configMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 3px var(--colorPrimario);
+    border-bottom: solid 15px var(--colorPrimario);
+    background-color: var(--colorTerciario);
+    border-radius: 20px;
+    box-shadow: rgba(0 , 0 , 0 , 0.15) 1.95px, 2.6px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 250px;
+}
+.card:hover{
+    transform: translate(0 , -5px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px, 8px, 24px;
+}
+.tarjetas{
+    display: flex;
+    gap: 50px;
+}
+a{
+    text-decoration: none;
+    color:black;
+    margin: 20px;
+}
+
+.circular{
+    --porcentaje: 50;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid var(--colorPrimario);
+  background:
+    conic-gradient(
+      var(--aciertoColor) calc(var(--porcentaje) * 1%),
+      #ddd 0
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+.circular::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+}
+.barraProgresoContenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.diasProgresoContenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cuadro{
+    background-color: var(--colorTerciario);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    height: 250px;
+    border-radius: 5%;
+    border: 1px solid var(--colorPrimario);
+}
+.mainDashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.cuadroCompletado{
+    width: 25%;
+    height: auto;
+    background-color: var(--aciertoColor); 
+    border: 2px solid var(--colorPrimario);
+    margin: 5px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.cuadroNoCompletado{
+    width: 25%;
+    height: auto;
+    background-color: var(--incompletoColor); 
+    border: 2px solid var(--colorPrimario);
+    color: var(--colorSecundario);
+    margin: 5px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+.actividades{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem;
+}
+.actividades::-webkit-scrollbar{
+    height: 12px;
+}
+.actividades::-webkit-scrollbar-track{
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+.actividades::-webkit-scrollbar-thumb{
+    background-color: var(--colorPrimario);
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+}
+.actividades::-webkit-scrollbar-thumb:hover{
+    background-color: var(--colorScrollMouse);
+}
+.actividad{
+    flex: 0 0 auto;
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cuadroActividadCompletado{
+    width: 340px;
+    height: 434px;
+    background-color: var(--aciertoColor);
+    font-size: 30px;
+    border-radius: 5%;
+    text-align: center;
+}
+.textoActividad{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cuadroActividadNoCompletado{
+    width: 340px;
+    height: 434px;
+    background-color: var(--incompletoColor);
+    font-size: 30px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.clock{
+    font-size: 35px;
+    font-weight: 900;
+    margin: 30px;
+}
+.clock::before{
+    content:"\f017";
+    font-family: 'Font Awesome 7 Free';
+}
+.check{
+    font-size: 35px;
+    font-weight: 900;
+    margin: 30px;
+}
+.check::before{
+    content: "\f058";
+    font-family: 'Font Awesome 7 Free';
+}
+.textoPregunta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.opcionesRespuestas{
+    display: flex;
+    gap: 30px;
+}
+.contenedorPreguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  h3 { font-size: 18px; }
+
+  .mainDashboard {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .barraProgresoContenedor,
+  .diasProgresoContenedor {
+    width: 90%;
+  }
+
+  .cuadro {
+    width: 100%;
+    height: auto;
+  }
+
+  .actividades {
+    width: 100%;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .actividad,
+  .actividadCompletada {
+    width: 260px;
+    flex: 0 0 auto;
+  }
+
+  .cuadroActividadCompletado,
+  .cuadroActividadNoCompletado {
+    width: 240px;
+    height: auto;
+    font-size: 20px;
+  }
+
+  .boton {
+    width: 220px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+    
+    h1{ 
+        font-size: 20px; 
+    }
+
+    h2{
+        font-size: 18px;
+        margin: 10px;
+        padding: 5px; 
+    }
+    h3{ 
+        font-size: 16px; 
+        margin: 5px;
+        padding: 0;
+    }
+
+    p{
+        font-size: 12px;
+    }
+    .entrada {
+        width: 100%;
+    }
+    .card{
+        width: 125px;
+    }
+    .boton {
+        width: 170px;
+        height: 45px;
+        font-size: 15px;
+        margin: 10px;
+    }
+    
+    .contenedoresAspectos{
+        width: 115px;
+    }
+    a{
+        margin: 0;
+    }
+    .imgHero {
+        max-width: 350px;
+        height: 300px;
+    }
+    #logo{
+        width: 70px;
+        height: 60px;
+    }
+    .card .imgExample{
+        width: 85px;
+        height: 60px;
+    }
+    .menu , .user{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .circular{
+        width: 100px;
+        height: 100px;
+    }
+    .circular::before{
+        width: 70px;
+        height: 70px;
+    }
+    .mainDashboard{
+        width: 90%;
+    }
+}
