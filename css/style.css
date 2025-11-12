@@ -4,7 +4,7 @@
     --colorSecundario: #FFFFFF;
     --colorTerciario: #D9D9D9;
     --colorCuarto: #a1a1a1; 
-    --aciertoColor: #52F943;
+    --aciertoColor: #82ff97;
     --incompletoColor: #757575;
     --colorScrollMouse: #3355ff;
     --fuentePrincipal: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -134,7 +134,7 @@ header{
 }
 .imgHero{
     width: 50%;
-    height: 700px;
+    height: auto;
 }
 .hero{
     display: flex;
@@ -288,6 +288,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 span{
     font-family: var(--fuentePrincipal);
@@ -334,6 +335,8 @@ span{
     font-size: 30px;
     border-radius: 5%;
     text-align: center;
+    border: solid 2px var(--colorPrimario);
+
 }
 .textoActividad{
     display: flex;
@@ -347,6 +350,8 @@ span{
     font-size: 30px;
     border-radius: 5%;
     text-align: center;
+        border: solid 2px var(--colorPrimario);
+
 }
 
 .clock{
@@ -382,53 +387,6 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-@media (max-width: 900px) {
-  h1 { font-size: 24px; }
-  h2 { font-size: 20px; }
-  h3 { font-size: 18px; }
-
-  .mainDashboard {
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1rem;
-  }
-
-  .barraProgresoContenedor,
-  .diasProgresoContenedor {
-    width: 90%;
-  }
-
-  .cuadro {
-    width: 100%;
-    height: auto;
-  }
-
-  .actividades {
-    width: 100%;
-    padding: 0.5rem;
-    gap: 0.5rem;
-  }
-
-  .actividad,
-  .actividadCompletada {
-    width: 260px;
-    flex: 0 0 auto;
-  }
-
-  .cuadroActividadCompletado,
-  .cuadroActividadNoCompletado {
-    width: 240px;
-    height: auto;
-    font-size: 20px;
-  }
-
-  .boton {
-    width: 220px;
-    height: 45px;
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -481,6 +439,10 @@ span{
     .card .imgExample{
         width: 85px;
         height: 60px;
+    }
+    .imgExample{
+        width: 100px;
+        height: auto;
     }
     .menu , .user{
         font-size: 20px;
