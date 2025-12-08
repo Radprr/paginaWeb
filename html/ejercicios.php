@@ -26,7 +26,7 @@
                 <p>Texto ejemplo 3</p>
             </div>
         </div>
-        <a href="../html/ejercicios2.html">
+        <a href="ejercicios2.php">
             <input type="button" value="Siguiente" class="boton">
         </a>
     </main>

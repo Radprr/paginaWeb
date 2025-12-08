@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main class="contenedorPreguntas">
@@ -26,7 +26,7 @@
                 <p>Texto ejemplo 3</p>
             </div>
         </div>
-        <a href="../html/dashboard.html">
+        <a href="dashboard.php">
             <input type="button" value="Siguiente" class="boton">
         </a>
     </main>

@@ -210,7 +210,7 @@ a{
 }
 
 .circular{
-    --porcentaje: 50;
+    --porcentaje:0;
 
   width: 150px;
   height: 150px;

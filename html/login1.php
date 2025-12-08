@@ -7,26 +7,26 @@
     <title>Iniciar sesion</title>
 </head>
 <body>
-    <form>
+    <?php if ($_SESSION["error"]) { ?>
+      <div>
+        <span><?php echo $_SESSION['error']; ?></span>
+      </div>
+    <?php } ?>
+    <form action = "procesarLogin.php" method = "post">
         <h1> Inicio de sesión </h1>
 
         <div class="campos">
-            <input type="text" name="correoElectronico", class="entrada" , placeholder="Correo electronico">
-            <input type="password" name="contraseña" , class="entrada" , placeholder="Contraseña">
+            <input type="text" name="correoUsuario", class="entrada" , placeholder="Correo electronico">
+            <input type="password" name="passwordUsuario" , class="entrada" , placeholder="Contraseña">
         </div>
 
         <div class="opcionesAdicionales">
             <a href=""> ¿Olvidaste tu contraseña? </a>
-            <a href="register.html"> Registrate </a>
+            <a href="register1.php"> Registrate </a>
         </div>
 
         <div class="botones">
-
-            <a href="dashboard.html">
-                <input type="button" class="boton", value="Ingresar">
-            </a>
-            
-
+            <button class="boton"> Ingresar </button>
         </div>
 
     </form>

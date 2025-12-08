@@ -1,12 +1,17 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de inicio</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bodyIndex">
+    
     <div class="contenedorHeader">
         <header>
             <img src="../img/logoPaginaWebIdiomas.png" alt="" id="logo">
@@ -18,10 +23,10 @@
             <img src="../img/imagenHero.png" alt="" class="imgHero">
             <div class="elementosHero">
                 <h1> Decida como ingresar <br> a los cursos</h1>
-                <a href="register.html">
+                <a href="register1.php">
                     <input type="button" class="boton" value="Empezar de cero">
                 </a>
-                <a href="login.html">
+                <a href="login1.php">
                     <input type="button" class="boton" value="Continuar aprendizaje">
                 </a>
             </div>
@@ -34,7 +39,7 @@
                     diferentes niveles y objetivos del usuario dandole una experiencia más satisfactoria
                 </p>
             </div>
-            <img src="../img/Conocimiento (2).png" alt="" class="imgHero">
+            <img src="/img/Conocimiento (2).png" alt="" class="imgHero">
         </div>
 
 
