@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 .circular {
-  --porcentaje: 6; /* Cambia el valor (0 a 100) */
+  --porcentaje: 6; 
   --color: #4caf50;
 
   width: 120px;

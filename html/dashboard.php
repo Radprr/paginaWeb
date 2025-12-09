@@ -12,7 +12,7 @@ if (!isset($_SESSION['idUsuario'])) {
 $idUsuario = $_SESSION['idUsuario'];
 
 
-$TOTAL_ACTIVIDADES_PLATAFORMA = 7; 
+$TOTAL_ACTIVIDADES_PLATAFORMA = 21; 
 
 $sql_progreso = "SELECT * FROM progreso WHERE idUsuario = ?";
 $stmt_progreso = $pdo->prepare($sql_progreso);
@@ -39,7 +39,7 @@ if ($total == 0) {
 
 $porcentaje = round(($completadas / $total) * 100);
 
-$temas_base = [
+/*$temas_base = [
     ['nombreTema' => 'Saludos y Presentaciones'],
     ['nombreTema' => 'Números y Colores'],
     ['nombreTema' => 'Comida y Bebidas'],
@@ -62,7 +62,7 @@ if ($count < count($temas_base)) {
         $stmt_insert_act->execute([$idUsuario, $tema['nombreTema']]);
     }
 }
-
+*/
 $sql_actividades = "SELECT * FROM actividades WHERE idUsuario = ?";
 $stmt_actividades = $pdo->prepare($sql_actividades);
 $stmt_actividades->execute([$idUsuario]);
@@ -161,7 +161,7 @@ $TOTAL_CUADROS_DIAS = 7;
                         </div>
                         <h3><?php echo $estadoTexto; ?></h3>
                     </div>
-                    <a href="ejercicios.php">
+                    <a href="ejercicios.php?id=<?php echo $idActividad; ?>">
                         <input type="button" value="Practicar" class="boton">
                     </a>
                 </div>

@@ -294,16 +294,14 @@ span{
     font-family: var(--fuentePrincipal);
     font-weight: bold;
 }
-.actividades{
-    width: 65%;
-    height: 100%;
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    gap: 1rem;
-    padding: 1rem;
+.actividades {
+    display: flex; /* Habilita el layout flexible */
+    justify-content: center; /* Centra los grupos de cajas en la pantalla */
+    align-items: flex-start; /* Alinea los ítems en la parte superior */
+    width: 90%; /* Ancho general del área de actividades */
+    margin: 40px auto; /* Centra el contenedor en la página */
+    gap: 25px; /* Espacio entre cada caja de actividad (Tema 1, Tema 2, etc.) */
+    flex-wrap: wrap; /* Permite que las cajas bajen si la pantalla es muy pequeña */
 }
 .actividades::-webkit-scrollbar{
     height: 12px;
